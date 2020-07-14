@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+@keyframes comeinleft{
+    0% {
+              transform: translateX(-30px) scaleX(2.5) scaleY(0.2);
+              transform-origin: 100% 50%;
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateX(0) scaleY(1) scaleX(1);
+              transform-origin: 50% 50%;
+              filter: blur(0);
+      opacity: 1;
+    }
+}
+
+.ProfileBox{
+    width: 100%;
+    height: inherit;
+    border: none;
+    border-radius: 20px;
+}
+
+.InnerChoice{
+    width: 35%;
+    height: inherit;
+    background-color: #FF8412;
+    float: left;
+    border-radius: 20px 0 0 20px;
+}
+
+.ProfileMain{
+    width: 65%;
+    float: left;
+    height: inherit;
+    border-radius: 0 20px 20px 0;
+}
+
+/* sideBar inside the orange place */
+
+.SideYou{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin-top: 80px;
+    text-align: start;
+    padding-left: 15%;
+    font-size: 45pt;
+    font-family: 'Rationale', sans-serif;
+}
+
+.ProfileList{
+    color: white;
+    padding: 25% 15% 15% 15%;
+    font-family: 'Geo', sans-serif;
+    font-size: 30px;
+    animation-name: comeinleft;
+    animation-duration: 0.5s;
+}
+
+.ListItem{
+    padding-bottom: 10%;
+    cursor: default;
+}

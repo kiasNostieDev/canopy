@@ -1,0 +1,18 @@
+.App{
+    display: flex;
+    background-color: #171711;
+}
+
+.SideBar{
+    width: 23%;
+    height: 100vh;
+}
+
+.MainBoard{
+    width: 77%;
+    height: 90vh;
+    background-color: #FEFFBC;
+    margin: 5vh;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.582);
+}

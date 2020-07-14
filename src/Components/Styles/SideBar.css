@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+
+/*leftMargin === 20px */
+
+.SideBar{
+    width: 23%;
+}
+
+.TitleBar{
+    padding: 23px 0 0 20px;
+    color: white;
+    font-family: 'Geo', sans-serif;
+    font-size: 35pt;
+}
+
+.ProfileSide{
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    width: 120px;
+    height: 120px;
+    margin: 20px 0 0 20px;
+}
+
+/* Line from svg */
+
+.LineSide{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* side option */
+
+.SideTab{
+    width: 400%;
+    margin: 10px 0 30px 20px;
+    color: white;
+    display: flex;
+}
+
+.TabText{
+    font-family: 'Geo', sans-serif;
+    letter-spacing: 3px;
+    font-size: 14.5pt;
+    width: 90%;
+    margin-top: 3px;
+    cursor: default;
+}
+
+.SelectedRound{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-top: 7.1px;
+    float: right;
+}
