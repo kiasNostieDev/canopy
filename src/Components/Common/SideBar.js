@@ -5,7 +5,7 @@ import Profile from "../Profile";
 export default function SideBar() {
   const Title = "canopy";
 
-  const TabTexts = ["News", "Global Discussions", "Topics", "Public Projects","Profile"];
+  const TabTexts = ["News", "Global Discussions", "Topics", "Public Projects","Blogs"];
 
   function Line() {
     return (
@@ -46,6 +46,7 @@ export default function SideBar() {
       <Line />
       <SideTab text={TabTexts[2]}/>
       <SideTab text={TabTexts[3]}/>
+      <SideTab text={TabTexts[4]}/>
     </div>
   );
 }

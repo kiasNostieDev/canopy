@@ -1,6 +1,7 @@
 .App{
     display: flex;
-    background-color: #171711;
+    background-color: #111317;
+    overflow: hidden;
 }
 
 .SideBar{

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
+
+.ProfileHome{
+    width: 100%;
+    height: inherit;
+    border-radius: 0 20px 20px 0;
+}
+
+.ProfileName{
+    width: 100%;
+    text-align: center;
+    color: #6B3D1B;
+    font-size: 40pt;
+    font-family: 'Muli';
+    word-wrap: break-word;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.ProfileCount{
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+
+.ContentC{
+    margin-left: 11%;
+    width: 18%;
+    background-color: #FF8412;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.Number{
+    margin-top: 10%;
+    width: 100%;
+    font-family: 'Rationale', sans-serif;
+    font-size: 40pt;
+    color: #8B4513;
+    text-align: center;
+    cursor: default;
+}
+
+.Noname{
+    margin-top: 8%;
+    border-radius: 0 0 5px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    background-color: #FF8412;
+    transition: all 0.4s ease 0s;
+    cursor: default;
+}
+
+.ContentC:hover .Noname{
+    opacity: 1;
+    transition: all 0.2s ease;
+    background-position: -120px;
+}
+
+.ContentC:hover{
+    border-radius: 10px;
+}
+
+.EditButton{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 7%;
+    padding-left: 11%;
+}
+
+.EditButton button{
+    height: 45px;
+    width: fit-content;
+    border-radius: 4px;
+    border: none;
+    background-color: #6B3D1B;
+    color: white;
+    font-family: 'Geo', sans-serif;
+    font-size: 17pt;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.4s ease 0s;
+}
+
+.EditButton button:hover{
+    letter-spacing: 2px;
+    color: white;
+    transition: all 0.4s ease 0s;
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+.ProfileDetails{
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 11%;
+    width: 80%;
+    height: 30%;
+}
