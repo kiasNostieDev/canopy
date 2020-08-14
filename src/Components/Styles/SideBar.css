@@ -56,3 +56,11 @@
     margin-top: 7.1px;
     float: right;
 }
+
+.SideTab:hover .SelectedRound{
+    background-color: yellow;
+}
+
+.SideTab:hover .TabText{
+    color: yellow;
+}
