@@ -1,0 +1,71 @@
+.Global{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.GlobalTitle{
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    color: #575C55;
+    font-family: 'Geo', sans-serif;
+    font-size: 30pt;
+}
+
+.GlobalOpinion{
+    width: 100%;
+    height: 10%;
+}
+
+.OpinionBox{
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    margin-top: 1%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.OpinionBox input{
+    height: 100%;
+    width: 80%;
+    float: left;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-family: 'Muli';
+    font-size: 13pt;
+    padding-left: 2%;
+    color: orange;
+}
+
+.OpinionSend{
+    height: 100%;
+    width: 18%;
+    float: left;
+    background-color: #247BA0;
+    border-radius: 0 10px 10px 0;
+}
+
+.OpinionButton{
+    height: inherit;
+    width: 100%;
+    border-radius: inherit;
+    background-color: rgb(11, 137, 190);
+    border: none;
+    font-family: 'Geo';
+    font-size: 20pt;
+    color: white;
+}
+
+.OpinionButton:hover{
+    color: black;
+    background-color: #FF8412;
+}
+
+.GlobalTalks{
+    width: 100%;
+    height: 74%;
+    border-radius: 0 0 20px 20px;
+}

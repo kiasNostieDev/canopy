@@ -3,6 +3,7 @@ import "./App.css";
 import "./Components/Styles/SideBar.css";
 import Profile from "./Components/Profile";
 import PublicPro from "./Components/PublicPro";
+import Global from "./Components/Global";
 
 function App() {
   const [Content, setContent] = useState("Profile");
@@ -19,6 +20,7 @@ function App() {
   function MainContent(props) {
     if (props.val === "Profile") return <Profile />;
     else if (props.val === "Public Projects") return <PublicPro />;
+    else if(props.val === 'Global Discussions')return <Global/>
     return <></>;
   }
 
