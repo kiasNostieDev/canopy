@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-import "./Components/Styles/SideBar.css"
+import "./Components/Styles/SideBar.css";
 import Profile from "./Components/Profile";
-
+import PublicPro from "./Components/PublicPro";
 
 function App() {
+  const [Content, setContent] = useState("Profile");
   const Title = "canopy";
 
   const TabTexts = [
@@ -14,6 +15,17 @@ function App() {
     "Public Projects",
     "Blogs",
   ];
+
+  function MainContent(props) {
+    if (props.val === "Profile") return <Profile />;
+    else if (props.val === "Public Projects") return <PublicPro />;
+    return <></>;
+  }
+
+  function HandleClick(route) {
+    setContent(route.toString());
+    console.log(Content);
+  }
 
   function Line() {
     return (
@@ -33,7 +45,12 @@ function App() {
 
   function SideTab(props) {
     return (
-      <div className="SideTab">
+      <div
+        className="SideTab"
+        onClick={() => {
+          HandleClick(props.text);
+        }}
+      >
         <div className="TabText">{props.text}</div>
         <div className="SelectedRound"></div>
       </div>
@@ -45,7 +62,13 @@ function App() {
       <div className="SideBar">
         <div className="SideBar">
           <div className="TitleBar">{Title}</div>
-          <div className="ProfileSide"></div>
+          <div
+            className="ProfileSide"
+            onClick={() => {
+              console.log("chooser");
+              HandleClick("Profile");
+            }}
+          ></div>
           <Line />
           <SideTab text={TabTexts[0]} />
           <SideTab text={TabTexts[1]} />
@@ -56,7 +79,7 @@ function App() {
         </div>
       </div>
       <div className="MainBoard">
-        <Profile/>
+        <MainContent val={Content} />
       </div>
     </div>
   );
