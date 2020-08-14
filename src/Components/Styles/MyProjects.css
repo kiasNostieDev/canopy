@@ -1,3 +1,17 @@
+@keyframes upDown {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .MyProjects{
     width: 100%;
     height: inherit;
@@ -32,9 +46,11 @@
     width: 26%;
     height:140px;
     border-radius: 10px;
-    background-color: #575C55;
+    background-color: #FFBD74;
     float: left;
     overflow: hidden;
+    animation-name: upDown;
+    animation-duration: 1.5s;
 }
 
 ::-webkit-scrollbar{
@@ -72,7 +88,6 @@
     overflow: hidden;
     text-align: left;
     font-family: 'Muli';
-    color: white;
 }
 
 .IntoArrow{
@@ -108,6 +123,6 @@
 }
 
 .MyProjectCard:hover .MyProjectText{
-    color: #FF8412;
+    color: #DB162F;
     transition: ease-in-out;
 }

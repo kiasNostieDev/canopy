@@ -18,7 +18,7 @@ export default function MyTopics() {
 
   return (
     <div className="MyTopics">
-      <div className="Heading">Topics...</div>
+      <div className="Heading">Topics</div>
       <div className="MyTopicContent">
         <MyTopicCard />
         <MyTopicCard />

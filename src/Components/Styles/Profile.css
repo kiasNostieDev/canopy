@@ -1,37 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
 
-@keyframes comeinleft{
+@keyframes leftGrow {
     0% {
-              transform: translateX(-30px) scaleX(2.5) scaleY(0.2);
-              transform-origin: 100% 50%;
-              filter: blur(40px);
-      opacity: 0;
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
     }
+
     100% {
-              transform: translateX(0) scaleY(1) scaleX(1);
-              transform-origin: 50% 50%;
-              filter: blur(0);
-      opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
     }
 }
 
-.ProfileBox{
+@keyframes comeinleft {
+    0% {
+        transform: translateX(-30px) scaleX(2.5) scaleY(0.2);
+        transform-origin: 100% 50%;
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.ProfileBox {
     width: 100%;
     height: inherit;
     border: none;
     border-radius: 20px;
 }
 
-.InnerChoice{
+.InnerChoice {
     width: 35%;
     height: inherit;
     background-color: #FF8412;
     float: left;
     border-radius: 20px 0 0 20px;
+    animation-duration: 1s;
+    animation-name: leftGrow;
 }
 
-.ProfileMain{
+.ProfileMain {
     width: 65%;
     float: left;
     height: inherit;
@@ -40,7 +59,7 @@
 
 /* sideBar inside the orange place */
 
-.SideYou{
+.SideYou {
     width: fit-content;
     height: fit-content;
     color: white;
@@ -52,12 +71,12 @@
     text-decoration: underline;
 }
 
-.SideYou:hover{
+.SideYou:hover {
     color: #6B3D1B;
-    text-decoration: dotted underline;
+    text-decoration: none;
 }
 
-.ProfileList{
+.ProfileList {
     color: white;
     padding: 25% 15% 15% 15%;
     font-family: 'Geo', sans-serif;
@@ -66,23 +85,23 @@
     animation-duration: 0.5s;
 }
 
-.ListItem{
+.ListItem {
     padding-bottom: 10%;
     cursor: default;
 }
 
-.ListItem:hover{
+.ListItem:hover {
     color: #6B3D1B;
 }
 
 /* new content button */
 
-.NewContent{
+.NewContent {
     width: 100%;
     padding-left: 15%;
 }
 
-.NewContent button{
+.NewContent button {
     height: 35px;
     width: fit-content;
     border-radius: 4px;
@@ -96,9 +115,9 @@
     transition: all 0.4s ease 0s;
 }
 
-.NewContent button:hover{
+.NewContent button:hover {
     letter-spacing: 2px;
     color: white;
     transition: all 0.4s ease 0s;
-    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
 }

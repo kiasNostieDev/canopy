@@ -3,23 +3,26 @@ import "./Styles/Profile.css";
 import ProfileHome from "./ProfileComponents/ProfileHome";
 import MyProjects from "./ProfileComponents/MyProjects";
 import MyTopics from "./ProfileComponents/MyTopics";
+import MyBlogs from "./ProfileComponents/MyBlogs";
 
 export default function Profile() {
-  const [buttonText, setButtonText] = useState("New Project");
-  const [Content, setContent] = useState(ProfileHome);
+  const [buttonText, setButtonText] = useState("New Project")
+  const [Content, setContent] = useState(ProfileHome)
+  const [YouColor, setYouColor] = useState('#6B3D1B')
 
   function handleClick(route, btnText) {
     setContent(route);
-    setButtonText(btnText)
+    setButtonText(btnText);
   }
 
   return (
     <div className="ProfileBox">
       <div className="InnerChoice">
         <div
+          style={{color:{YouColor}}}
           className="SideYou"
           onClick={() => {
-            handleClick(ProfileHome, 'LogOut');
+            handleClick(ProfileHome, "LogOut");
           }}
         >
           YOU.
@@ -28,7 +31,7 @@ export default function Profile() {
           <div
             className="ListItem"
             onClick={() => {
-              handleClick(MyProjects, 'New Project');
+              handleClick(MyProjects, "New Project");
             }}
           >
             my Projects
@@ -36,12 +39,19 @@ export default function Profile() {
           <div
             className="ListItem"
             onClick={() => {
-              handleClick(MyTopics, 'New Topic');
+              handleClick(MyTopics, "New Topic");
             }}
           >
             my Topics
           </div>
-          <div className="ListItem">my Blogs</div>
+          <div
+            className="ListItem"
+            onClick={() => {
+              handleClick(MyBlogs, "New Blog");
+            }}
+          >
+            my Blogs
+          </div>
         </div>
         <div className="NewContent">
           <button>{buttonText}</button>
