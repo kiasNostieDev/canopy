@@ -1,0 +1,152 @@
+.PublicProjects {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.ListPro {
+  width: 70%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  float: left;
+}
+
+.ListProHeading {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 30pt;
+  color: #575c55;
+  font-family: "Geo", sans-serif;
+}
+
+.ListProPortion {
+  height: 90%;
+  width: 100%;
+  border-radius: 0 0 0 20px;
+  overflow: auto;
+}
+
+.ListProTile {
+  width: 26%;
+  min-height: 100px;
+  max-height: fit-content;
+  border-radius: 10px;
+  background-color: #ffbd74;
+  float: left;
+  overflow: hidden;
+  animation-name: upDown;
+  animation-duration: 1.5s;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.ProTitle {
+  width: 100%;
+  height: fit-content;
+}
+
+.ProTitle div {
+  height: fit-content;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 16pt;
+  text-overflow: clip;
+  overflow: hidden;
+  text-align: left;
+  font-family: "Muli";
+}
+
+.ProDesc {
+  width: 100%;
+  height: fit-content;
+}
+
+.Tags {
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+}
+
+.TagPro {
+  height: 20px;
+  width: fit-content;
+  padding: 0 2% 0 2%;
+  color: black;
+  font-size: 10pt;
+  color: #e63946;
+  background-color: #ffbd74;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-color: #ff8412;
+  float: left;
+}
+
+.ProAuthor {
+  width: 100%;
+  height: 10%;
+  right: 5px;
+  background-color: white;
+  font-family: "Muli";
+  letter-spacing: 1px;
+  padding-left: 5px;
+}
+
+.ProFollow {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.CustomPro {
+  width: 30%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  background-color: #ff8412;
+  float: left;
+}
+
+.ProFollowing {
+  width: 100%;
+  height: inherit;
+}
+
+.ProFollowingHeading {
+  text-align: center;
+  font-size: 20pt;
+  margin-top: 20px;
+  color: #575c55;
+  font-family: "Geo", sans-serif;
+}
+
+.ProFollowingList {
+  text-align: start;
+  margin-top: 20px;
+  color: white;
+  font-family: "Muli";
+  text-overflow: clip;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.ListItemPro {
+  padding-left: 20px;
+  margin-top: 10px;
+  color: inherit;
+  padding-right: 20px;
+  width: 100%;
+  text-decoration: underline;
+  height: fit-content;
+  font-size: 14pt;
+}
+
+.ListItemPro:hover {
+  color: #41393e;
+  letter-spacing: 1px;
+}

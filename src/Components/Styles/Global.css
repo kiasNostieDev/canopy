@@ -94,4 +94,5 @@
 
 .ActualOpinion{
     color: white;
+    word-wrap: break-word;
 }
